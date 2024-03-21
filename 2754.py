@@ -13,14 +13,11 @@ else:
     elif Grade[0]=="D":
         score=1.0
     else:
-        print("ㅗ")
+        exit()
 
-    if len(Grade)>1:
-
-        if Grade[1]=="-":
-                print(score-0.3)
-        elif Grade[1]=="+":
-                print(score+0.3)
-        else:
-                print(score)
-    else:print("ㅗ")
+    if Grade[1]=="-":
+        print(score-0.3)
+    elif Grade[1]=="+":
+        print(score+0.3)
+    else:
+        print(score)
